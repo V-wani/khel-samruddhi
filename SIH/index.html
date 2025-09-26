@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khelo India - AI-Powered Sports Talent Assessment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navigation">
+    <div class="nav-container">
+      <div class="nav-content">
+        <!-- Logo -->
+        <div class="nav-logo">
+          <div class="logo-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect width="14" height="20" x="5" y="2" rx="2" ry="2"/>
+              <path d="M12 18h.01"/>
+            </svg>
+          </div>
+          <span class="logo-text">Khelo India</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="nav-logo">
+                    <div class="logo-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect width="14" height="20" x="5" y="2" rx="2" ry="2"/>
+                            <path d="M12 18h.01"/>
+                        </svg>
+                    </div>
+                    <span class="logo-text">Khelo India</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="nav-links desktop-nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#how-it-works" class="nav-link">How It Works</a>
+                    <a href="#download" class="nav-link">Download</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                
+                <!-- Desktop CTA -->
+                <div class="desktop-nav">
+                    <button class="btn-hero" onclick="scrollToSection('download')">
+                        Download App
+                    </button>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="4" x2="20" y1="6" y2="6"/>
+                        <line x1="4" x2="20" y1="12" y2="12"/>
+                        <line x1="4" x2="20" y1="18" y2="18"/>
+                    </svg>
+                    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+                        <path d="m18 6-12 12"/>
+                        <path d="m6 6 12 12"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-nav-links">
+                    <a href="#home" class="mobile-nav-link" onclick="closeMobileMenu()">Home</a>
+                    <a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()">About</a>
+                    <a href="#features" class="mobile-nav-link" onclick="closeMobileMenu()">Features</a>
+                    <a href="#how-it-works" class="mobile-nav-link" onclick="closeMobileMenu()">How It Works</a>
+                    <a href="#download" class="mobile-nav-link" onclick="closeMobileMenu()">Download</a>
+                    <a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()">Contact</a>
+                    <div class="mobile-cta">
+                        <button class="btn-hero" onclick="scrollToSection('download'); closeMobileMenu();">
+                            Download App
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <!-- Background Image - Replace with your hero background image (1920x1080px recommended) -->
+            <div class="hero-background">
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <!-- Tech Pattern Overlay -->
+            <div class="tech-pattern"></div>
+            
+            <!-- Content -->
+            <div class="hero-content">
+                <div class="hero-text fade-in-up">
+                    <h1 class="hero-title">
+                        Discover India's Hidden Sports Talent
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        An AI-powered app to assess fitness, identify talent, and unlock potential across every corner of India.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn-hero group" onclick="scrollToSection('download')">
+                            <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="14" height="20" x="5" y="2" rx="2" ry="2"/>
+                                <path d="M12 18h.01"/>
+                            </svg>
+                            Download App
+                        </button>
+                        
+                        <div class="platform-buttons">
+                            <button class="btn-secondary" onclick="alert('iOS App Store link will be added here')">
+                                <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                </svg>
+                                iOS
+                            </button>
+                            <button class="btn-secondary" onclick="alert('Google Play Store link will be added here')">
+                                <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect width="14" height="20" x="5" y="2" rx="2" ry="2"/>
+                                    <path d="M12 18h.01"/>
+                                </svg>
+                                Android
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- QR Code Placeholder - Replace with your QR code image (128x128px recommended) -->
+                    <div class="qr-code-container">
+                        <div class="qr-code-placeholder">
+                            <span class="qr-text">
+                                QR Code<br>
+                                Quick Download
+                            </span>
+                        </div>
+                        <p class="qr-description">Scan to download</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Floating Elements -->
+            <div class="floating-element floating-1"></div>
+            <div class="floating-element floating-2"></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="about-grid">
+                    
+                    <!-- Phone Mockup -->
+                    <div class="phone-mockup-container fade-in-up">
+                        <!-- Phone Frame -->
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                
+                                <!-- Status Bar -->
+                                <div class="status-bar">
+                                    <span class="time">9:41</span>
+                                    <div class="status-icons">
+                                        <div class="signal-bar"></div>
+                                        <div class="wifi-bar"></div>
+                                        <div class="battery-bar"></div>
+                                    </div>
+                                </div>
+                                
+                                <!-- App Content -->
+                                <div class="app-content">
+                                    <div class="app-header">
+                                        <h3 class="app-title">Khelo India</h3>
+                                        <p class="app-subtitle">Choose Your Assessment</p>
+                                    </div>
+                                    
+                                    <!-- Test Options -->
+                                    <div class="test-options">
+                                        <div class="test-option">
+                                            <div class="test-icon orange-bg">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"/>
+                                                </svg>
+                                            </div>
+                                            <div class="test-info">
+                                                <h4 class="test-name">Vertical Jump</h4>
+                                                <p class="test-desc">Test explosive power</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="test-option">
+                                            <div class="test-icon green-bg">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/>
+                                                </svg>
+                                            </div>
+                                            <div class="test-info">
+                                                <h4 class="test-name">Shuttle Run</h4>
+                                                <p class="test-desc">Measure agility</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="test-option">
+                                            <div class="test-icon blue-bg">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                    <circle cx="12" cy="12" r="10"/>
+                                                    <circle cx="12" cy="12" r="6"/>
+                                                    <circle cx="12" cy="12" r="2"/>
+                                                </svg>
+                                            </div>
+                                            <div class="test-info">
+                                                <h4 class="test-name">Endurance Run</h4>
+                                                <p class="test-desc">Assess stamina</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="start-button-container">
+                                        <div class="start-button">
+                                            Start Assessment
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Content -->
+                    <div class="about-content fade-in-up">
+                        <h2 class="about-title">
+                            Making Sports Assessment <span class="gradient-text">Accessible to All</span>
+                        </h2>
+                        
+                        <p class="about-description">
+                            Our mission is to democratize sports talent identification across India. Using cutting-edge AI technology, 
+                            we bring professional-grade fitness assessment to every smartphone, reaching students in the remotest villages 
+                            and busiest cities alike.
+                        </p>
+                        
+                        <!-- Features Grid -->
+                        <div class="about-features">
+                            <div class="about-feature">
+                                <div class="feature-icon orange-bg">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"/>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-title">Agility Tests</h3>
+                                <p class="feature-desc">Quick reflex and movement analysis</p>
+                            </div>
+                            
+                            <div class="about-feature">
+                                <div class="feature-icon green-bg">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-title">Strength Tests</h3>
+                                <p class="feature-desc">Core and muscular strength evaluation</p>
+                            </div>
+                            
+                            <div class="about-feature">
+                                <div class="feature-icon primary-bg">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <circle cx="12" cy="12" r="6"/>
+                                        <circle cx="12" cy="12" r="2"/>
+                                    </svg>
+                                </div>
+                                <h3 class="feature-title">Endurance</h3>
+                                <p class="feature-desc">Cardiovascular fitness assessment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section section-padding">
+            <div class="container">
+                <!-- Header -->
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">
+                        Powerful Features for 
+                        <span class="gradient-text"> Everyone</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Cutting-edge technology designed to work everywhere, from rural villages to urban schools.
+                    </p>
+                </div>
+                
+                <!-- Features Grid -->
+                <div class="features-grid">
+                    <div class="feature-card fade-in-up stagger-1">
+                        <div class="feature-icon primary-bg">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="14" height="20" x="5" y="2" rx="2" ry="2"/>
+                                <path d="M12 18h.01"/>
+                            </svg>
+                        </div>
+                        
+                        <h3 class="feature-card-title">Mobile Friendly</h3>
+                        <p class="feature-card-desc">Works seamlessly on low-end devices, ensuring accessibility for every student across India.</p>
+                    </div>
+
+                    <div class="feature-card fade-in-up stagger-2">
+                        <div class="feature-icon orange-bg">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="23 7 16 12 23 17 23 7"/>
+                                <rect width="14" height="14" x="1" y="5" rx="2" ry="2"/>
+                            </svg>
+                        </div>
+                        
+                        <h3 class="feature-card-title">AI Video Analysis</h3>
+                        <p class="feature-card-desc">Advanced computer vision detects jumps, runs, sit-ups, and other movements with precision.</p>
+                    </div>
+
+                    <div class="feature-card fade-in-up stagger-3">
+                        <div class="feature-icon green-bg">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" x2="12" y1="20" y2="10"/>
+                                <line x1="18" x2="18" y1="20" y2="4"/>
+                                <line x1="6" x2="6" y1="20" y2="16"/>
+                            </svg>
+                        </div>
+                        
+                        <h3 class="feature-card-title">Performance Reports</h3>
+                        <p class="feature-card-desc">Detailed analytics and progress tracking help monitor improvement over time.</p>
+                    </div>
+
+                    <div class="feature-card fade-in-up stagger-1">
+                        <div class="feature-icon primary-bg">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 20h9"/>
+                                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                            </svg>
+                        </div>
+                        
+                        <h3 class="feature-card-title">Offline Mode</h3>
+                        <p class="feature-card-desc">Functions without internet connectivity, perfect for areas with limited network access.</p>
+                    </div>
+
+                    <div class="feature-card fade-in-up stagger-2">
+                        <div class="feature-icon orange-bg">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+                                <path d="M14 5h1.5a2.5 2.5 0 0 1 0 5H14"/>
+                                <path d="M6 9h8"/>
+                                <path d="M6 9v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V9"/>
+                                <circle cx="12" cy="16" r="1"/>
+                            </svg>
+                        </div>
+                        
+                        <h3 class="feature-card-title">Talent Benchmarking</h3>
+                        <p class="feature-card-desc">Compare results with national standards and identify potential talent early.</p>
+                    </div>
+
+                    <div class="feature-card fade-in-up stagger-3">
+                        <div class="feature-icon green-bg">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>
+                            </svg>
+                        </div>
+                        
+                        <h3 class="feature-card-title">Secure & Private</h3>
+                        <p class="feature-card-desc">Built-in data protection ensures student information remains safe and confidential.</p>
+                    </div>
+                </div>
+                
+                <!-- Bottom CTA -->
+                <div class="features-cta fade-in-up">
+                    <div class="cta-container">
+                        <h3 class="cta-title">Ready to Transform Sports Assessment?</h3>
+                        <p class="cta-description">
+                            Join thousands of schools and coaches already using our platform to discover and nurture talent.
+                        </p>
+                        <button class="btn-hero" onclick="scrollToSection('download')">
+                            Get Started Today
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="how-it-works-section section-padding">
+            <div class="container">
+                <!-- Header -->
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">
+                        How It <span class="gradient-text">Works</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Simple, accurate, and accessible. Get professional sports assessment results in just a few steps.
+                    </p>
+                </div>
+                
+                <!-- Steps -->
+                <div class="steps-container">
+                    <div class="step fade-in-up stagger-1">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <div class="step-icon primary-bg">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7,10 12,15 17,10"/>
+                                    <line x1="12" x2="12" y1="15" y2="3"/>
+                                </svg>
+                            </div>
+                            <h3 class="step-title">Download & Setup</h3>
+                            <p class="step-description">Install the app and complete a quick setup. Works on any smartphone, no special equipment needed.</p>
+                        </div>
+                    </div>
+
+                    <div class="step fade-in-up stagger-2">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <div class="step-icon orange-bg">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
+                                    <circle cx="12" cy="13" r="3"/>
+                                </svg>
+                            </div>
+                            <h3 class="step-title">Record Assessment</h3>
+                            <p class="step-description">Choose your test type and record using your phone camera. Our AI guides you through each exercise.</p>
+                        </div>
+                    </div>
+
+                    <div class="step fade-in-up stagger-3">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <div class="step-icon green-bg">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 11H5a2 2 0 0 0-2 2v3c0 1.1.9 2 2 2h4m4-6h6a2 2 0 0 1 2 2v3c0 1.1-.9 2-2 2h-6m-6 0V9a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="step-title">AI Analysis</h3>
+                            <p class="step-description">Advanced algorithms analyze your performance, measuring key metrics like speed, power, and technique.</p>
+                        </div>
+                    </div>
+
+                    <div class="step fade-in-up stagger-4">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <div class="step-icon primary-bg">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" x2="12" y1="20" y2="10"/>
+                                    <line x1="18" x2="18" y1="20" y2="4"/>
+                                    <line x1="6" x2="6" y1="20" y2="16"/>
+                                </svg>
+                            </div>
+                            <h3 class="step-title">Get Results</h3>
+                            <p class="step-description">Receive detailed reports with scores, recommendations, and comparison with peers nationwide.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Section -->
+        <section class="impact-section section-padding">
+            <div class="impact-background">
+                <div class="impact-element impact-element-1"></div>
+                <div class="impact-element impact-element-2"></div>
+            </div>
+            
+            <!-- Abstract India Map -->
+            <div class="india-map-abstract"></div>
+            
+            <div class="container">
+                <!-- Header -->
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">
+                        Our <span class="gradient-text">Impact</span> Across India
+                    </h2>
+                    <p class="section-subtitle">
+                        Transforming sports assessment and talent identification from Kashmir to Kanyakumari.
+                    </p>
+                </div>
+                
+                <!-- Stats Grid -->
+                <div class="stats-grid">
+                    <div class="stat-card fade-in-up stagger-1">
+                        <div class="stat-content">
+                            <div class="stat-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="m22 21-3-3m0 0a5.5 5.5 0 1 1-7.8-7.8 5.5 5.5 0 0 1 7.8 7.8Z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="stat-number">10M+</div>
+                            <div class="stat-label">Students Assessed</div>
+                            <p class="stat-description">Comprehensive fitness evaluations completed across India</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card fade-in-up stagger-2">
+                        <div class="stat-content">
+                            <div class="stat-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 22v-4a2 2 0 1 0-4 0v4"/>
+                                    <path d="m18 10 4 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-8l4-2"/>
+                                    <path d="M18 5v6"/>
+                                    <path d="M6 5v6"/>
+                                    <path d="m12 9-4-4H8l4-2 4 2h0l-4 4Z"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="stat-number">50K+</div>
+                            <div class="stat-label">Schools Connected</div>
+                            <p class="stat-description">Educational institutions using our platform nationwide</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card fade-in-up stagger-3">
+                        <div class="stat-content">
+                            <div class="stat-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+                                    <path d="M14 5h1.5a2.5 2.5 0 0 1 0 5H14"/>
+                                    <path d="M6 9h8"/>
+                                    <path d="M6 9v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V9"/>
+                                    <circle cx="12" cy="16" r="1"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="stat-number">2K+</div>
+                            <div class="stat-label">Talents Identified</div>
+                            <p class="stat-description">Promising athletes discovered and nurtured through our system</p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card fade-in-up stagger-4">
+                        <div class="stat-content">
+                            <div class="stat-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <pin d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            
+                            <div class="stat-number">25+</div>
+                            <div class="stat-label">States Covered</div>
+                            <p class="stat-description">Pan-India presence with rural and urban reach</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mission Statement -->
+                <div class="mission-statement fade-in-up">
+                    <div class="mission-content">
+                        <h3 class="mission-title">
+                            Bridging the Gap Between <span class="gradient-text">Rural & Urban</span>
+                        </h3>
+                        
+                        <div class="mission-sections">
+                            <div class="mission-section">
+                                <h4 class="mission-section-title rural-title">🏞️ Rural Impact</h4>
+                                <p class="mission-section-desc">
+                                    Bringing world-class sports assessment to remote villages where traditional coaching 
+                                    infrastructure is limited. Our AI technology democratizes talent identification.
+                                </p>
+                            </div>
+                            
+                            <div class="mission-section">
+                                <h4 class="mission-section-title urban-title">🏙️ Urban Excellence</h4>
+                                <p class="mission-section-desc">
+                                    Enhancing existing sports programs in cities with data-driven insights, 
+                                    helping coaches make informed decisions about student potential and training focus.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screenshots Section -->
+        <section class="screenshots-section section-padding">
+            <div class="container">
+                <!-- Header -->
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">
+                        App <span class="gradient-text">Screenshots</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Take a look at our intuitive interface designed for seamless user experience.
+                    </p>
+                </div>
+                
+                <!-- Screenshots Carousel -->
+                <div class="screenshots-carousel fade-in-up">
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="carouselTrack">
+                            <!-- Screenshot 1 - Replace with your app screenshot (375x812px recommended for mobile mockup) -->
+                            <div class="screenshot-slide">
+                                <div class="screenshot-phone">
+                                    <div class="screenshot-content">
+                                        <img src="SIH_image1.jpeg" alt="App Home Screen" width="300" height="520"> <!--Demo for placing images-->
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Screenshot 2 - Replace with your app screenshot (375x812px recommended for mobile mockup) -->
+                            <div class="screenshot-slide">
+                                <div class="screenshot-phone">
+                                    <div class="screenshot-content">
+                                        <div class="screenshot-placeholder">
+                                            <span>Assessment<br>Screenshot 2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Screenshot 3 - Replace with your app screenshot (375x812px recommended for mobile mockup) -->
+                            <div class="screenshot-slide">
+                                <div class="screenshot-phone">
+                                    <div class="screenshot-content">
+                                        <div class="screenshot-placeholder">
+                                            <span>Results<br>Screenshot 3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Screenshot 4 - Replace with your app screenshot (375x812px recommended for mobile mockup) -->
+                            <div class="screenshot-slide">
+                                <div class="screenshot-phone">
+                                    <div class="screenshot-content">
+                                        <div class="screenshot-placeholder">
+                                            <span>Progress<br>Screenshot 4</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Screenshot 5 - Replace with your app screenshot (375x812px recommended for mobile mockup) -->
+                            <div class="screenshot-slide">
+                                <div class="screenshot-phone">
+                                    <div class="screenshot-content">
+                                        <div class="screenshot-placeholder">
+                                            <span>Profile<br>Screenshot 5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Screenshot 6 - Replace with your app screenshot (375x812px recommended for mobile mockup) -->
+                            <div class="screenshot-slide">
+                                <div class="screenshot-phone">
+                                    <div class="screenshot-content">
+                                        <div class="screenshot-placeholder">
+                                            <span>Dashboard<br>Screenshot 6</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Carousel Controls -->
+                    <div class="carousel-controls">
+                        <button class="carousel-btn prev" onclick="moveCarousel(-1)">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15,18 9,12 15,6"/>
+                            </svg>
+                        </button>
+                        <button class="carousel-btn next" onclick="moveCarousel(1)">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9,18 15,12 9,6"/>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <!-- Carousel Dots -->
+                    <div class="carousel-dots">
+                        <span class="dot active" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section id="download" class="download-section section-padding">
+            <div class="download-background">
+                <div class="download-effect"></div>
+            </div>
+            
+            <div class="container">
+                <div class="download-content fade-in-up">
+                    <div class="download-header">
+                        <h2 class="download-title">
+                            Ready to <span class="download-highlight">Download?</span>
+                        </h2>
+                        <p class="download-subtitle">
+                            Join the sports revolution today. Download our app and start discovering hidden talent across India.
+                        </p>
+                    </div>
+                    
+                    <div class="download-grid">
+                        <div class="download-buttons">
+                            <h3 class="download-section-title">Get the App</h3>
+                            
+                            <div class="app-store-buttons">
+                                <button class="app-store-btn">
+                                    <svg class="app-store-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                    </svg>
+                                    <div class="app-store-text">
+                                        <div class="app-store-small">Download on the</div>
+                                        <div class="app-store-large">App Store</div>
+                                    </div>
+                                </button>
+                                
+                                <button class="app-store-btn">
+                                    <svg class="app-store-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect width="14" height="20" x="5" y="2" rx="2" ry="2"/>
+                                        <path d="M12 18h.01"/>
+                                    </svg>
+                                    <div class="app-store-text">
+                                        <div class="app-store-small">Get it on</div>
+                                        <div class="app-store-large">Google Play</div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="qr-download-container">
+                            <h3 class="qr-title">Quick Download</h3>
+                            <div class="qr-code-large">
+                                <!-- Replace with your QR code image (160x160px recommended) -->
+                                <div class="qr-placeholder">
+                                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect width="5" height="5" x="3" y="3" rx="1"/>
+                                        <rect width="5" height="5" x="16" y="3" rx="1"/>
+                                        <rect width="5" height="5" x="3" y="16" rx="1"/>
+                                        <path d="m21 16-3.5-3.5-3.5 3.5"/>
+                                        <path d="m21 21-3.5-3.5-3.5 3.5"/>
+                                        <path d="M12 7h.01"/>
+                                        <path d="M3 12h.01"/>
+                                        <path d="M12 3h.01"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <p class="qr-description">Scan with your phone camera to download instantly</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section section-padding">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">
+                        Frequently Asked <span class="gradient-text">Questions</span>
+                    </h2>
+                </div>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <h3 class="faq-question">Do I need internet all the time?</h3>
+                        <p class="faq-answer">No! Our app works offline for most functions. You can conduct fitness tests and view results without internet.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">What tests are included?</h3>
+                        <p class="faq-answer">Vertical Jump, Shuttle Run, Endurance Run, Sit-ups, Push-ups, Flexibility Tests, and Balance Assessments.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">Is my data safe?</h3>
+                        <p class="faq-answer">Absolutely! We use encryption and comply with privacy standards. Your data is never shared without consent.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">Can schools use it for groups?</h3>
+                        <p class="faq-answer">Yes! We offer group features for schools with batch assessments and progress tracking.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">
+                        Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+                    </p>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-info fade-in-up">
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon primary-bg">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h3 class="contact-label">Email</h3>
+                                    <p class="contact-value">kheloindia@sportsai.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon orange-bg">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h3 class="contact-label">Phone</h3>
+                                    <p class="contact-value">+91 8605765429</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon green-bg">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h3 class="contact-label">Address</h3>
+                                    <p class="contact-value">Pune, Maharashtra, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container fade-in-up">
+                        <form class="contact-form">
+                            <div class="form-row">
+                                <input type="text" placeholder="Your Name" class="form-input" required>
+                                <input type="email" placeholder="Email Address" class="form-input" required>
+                            </div>
+                            <input type="text" placeholder="Subject" class="form-input" required>
+                            <textarea placeholder="Your Message" rows="5" class="form-textarea" required></textarea>
+                            <button type="submit" class="btn-hero form-submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="14" height="20" x="5" y="2" rx="2" ry="2"/>
+                                <path d="M12 18h.01"/>
+                            </svg>
+                        </div>
+                        <span class="footer-logo-text">Khelo India</span>
+                    </div>
+                    <p class="footer-description">
+                        Democratizing sports talent identification across India with AI-powered assessments.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                                <path d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect width="4" height="12" x="2" y="9"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="#home" class="footer-link">Home</a>
+                        <a href="#about" class="footer-link">About</a>
+                        <a href="#features" class="footer-link">Features</a>
+                        <a href="#download" class="footer-link">Download</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Support</h3>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Help Center</a>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                        <a href="#contact" class="footer-link">Contact</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <div class="footer-contact">
+                        <p>Email: kheloindia@sportsai.com</p>
+                        <p>Phone: +91 8605765429</p>
+                        <p>Location: Pune, India</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2024 Khelo India. All rights reserved. Made with ❤️ for Indian sports talent.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
